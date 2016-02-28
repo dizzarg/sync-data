@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Departments>
+<Department DepCode="ABC127" DepJob="Developer">Description</Department>
+<Department DepCode="ABC128" DepJob="Developer">Description 1</Department>
+</Departments>

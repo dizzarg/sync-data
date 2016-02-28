@@ -1,0 +1,35 @@
+<assembly>
+    <id>bin</id>
+    <formats>
+        <format>zip</format>
+        <format>dir</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <dependencySets>
+        <dependencySet>
+            <includes>
+                <include>*.*</include>
+            </includes>
+            <useProjectArtifact>false</useProjectArtifact>
+            <useTransitiveDependencies>true</useTransitiveDependencies>
+            <outputDirectory>lib</outputDirectory>
+            <unpack>false</unpack>
+        </dependencySet>
+    </dependencySets>
+    <fileSets>
+        <fileSet>
+            <directory>src/main/assembly/scripts</directory>
+            <outputDirectory>/</outputDirectory>
+            <includes>
+                <include>*.bat</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/assembly/properties</directory>
+            <outputDirectory>/conf</outputDirectory>
+            <includes>
+                <include>*.properties</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>
