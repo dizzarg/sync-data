@@ -10,6 +10,7 @@ My pet program. Main features is:
 
   * If file exists the application will upload the content of database table
      Example XML file:
+```
 
       <?xml version="1.0" encoding="UTF-8"?>
       <Departments>
@@ -19,6 +20,7 @@ My pet program. Main features is:
           <Department DepCode="ABC139" DepJob="Testing">Description 4</Department>
       </Departments>
 
+```
 
   * If file does not exist the application will synchronize with database content
 
@@ -32,6 +34,8 @@ My pet program. Main features is:
 ## Preinstall
 
   For database need execute SQL script:
+  ```
+  
   CREATE TABLE DEPARTMENTS(
       ID INT PRIMARY KEY AUTO_INCREMENT,
       DEP_CODE VARCHAR(20) NOT NULL,
@@ -39,6 +43,8 @@ My pet program. Main features is:
       DESCRIPTION VARCHAR(255),
       UNIQUE KEY DEP_UNIQUE (DEP_CODE, DEP_JOB)
    )
+   
+```
 
   Application configuration contains in `/conf` path. log4j.properties - logger configuration. sync.properties - application configuration
 
