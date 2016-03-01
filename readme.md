@@ -10,16 +10,14 @@ My pet program. Main features is:
 
   * If file exists the application will upload the content of database table
      Example XML file:
-```
-
-      <?xml version="1.0" encoding="UTF-8"?>
-      <Departments>
-          <Department DepCode="ABC130" DepJob="Install">Description 1</Department>
-          <Department DepCode="ABC137" DepJob="Developing">Description 2</Department>
-          <Department DepCode="ABC138" DepJob="Developing">Description 3</Department>
-          <Department DepCode="ABC139" DepJob="Testing">Description 4</Department>
-      </Departments>
-
+```xml
+ <?xml version="1.0" encoding="UTF-8"?>
+ <Departments>
+    <Department DepCode="ABC130" DepJob="Install">Description 1</Department>
+    <Department DepCode="ABC137" DepJob="Developing">Description 2</Department>
+    <Department DepCode="ABC138" DepJob="Developing">Description 3</Department>
+    <Department DepCode="ABC139" DepJob="Testing">Description 4</Department>
+ </Departments>
 ```
 
   * If file does not exist the application will synchronize with database content
@@ -34,8 +32,7 @@ My pet program. Main features is:
 ## Preinstall
 
   For database need execute SQL script:
-  ```
-  
+  ```sql
   CREATE TABLE DEPARTMENTS(
       ID INT PRIMARY KEY AUTO_INCREMENT,
       DEP_CODE VARCHAR(20) NOT NULL,
@@ -43,7 +40,6 @@ My pet program. Main features is:
       DESCRIPTION VARCHAR(255),
       UNIQUE KEY DEP_UNIQUE (DEP_CODE, DEP_JOB)
    )
-   
 ```
 
   Application configuration contains in `/conf` path. log4j.properties - logger configuration. sync.properties - application configuration
