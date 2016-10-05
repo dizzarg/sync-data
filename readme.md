@@ -1,7 +1,7 @@
-sync-data
+Sync data tool
 ==========
 
-My pet program. Main features is:
+It is my pet program. Main features is:
 
 * uploads the contents of a table from the database into XML file
 * synchronizes the contents of the database tables on the XML file.
@@ -42,7 +42,9 @@ My pet program. Main features is:
    )
 ```
 
-  Application configuration contains in `/conf` path. log4j.properties - logger configuration. sync.properties - application configuration
+  Configurations of tool contains in `/conf` directory. The directory has: 
+   * `log4j.properties` - logger configuration 
+   * `sync.properties` - configurations of tool
 
 ## Build
 
