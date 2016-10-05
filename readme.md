@@ -6,6 +6,8 @@ It is my pet program. Main features is:
 * uploads the contents of a table from the database into XML file
 * synchronizes the contents of the database tables on the XML file.
 
+[![Build Status](https://travis-ci.org/dizzarg/sync-data.svg?branch=master)](https://travis-ci.org/dizzarg/sync-data)
+
 ## Rules:
 
   * If file exists the application will upload the content of database table
