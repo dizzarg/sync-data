@@ -5,7 +5,7 @@ import ru.kadyrov.sync.data.context.exception.ConfigException;
 import ru.kadyrov.sync.data.db.api.*;
 import ru.kadyrov.sync.data.db.h2.H2DepartmentRepository;
 import ru.kadyrov.sync.data.db.h2.H2ConnectionHolder;
-import ru.kadyrov.sync.data.transform.DepartmentTransformer;
+import ru.kadyrov.sync.data.transform.api.DepartmentTransformer;
 import ru.kadyrov.sync.data.transform.xml.XMLDepartmentTransformer;
 
 import java.io.IOException;

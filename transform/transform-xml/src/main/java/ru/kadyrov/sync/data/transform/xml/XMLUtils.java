@@ -5,8 +5,7 @@ import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 import ru.kadyrov.sync.data.domain.DuplicateException;
 import ru.kadyrov.sync.data.domain.NaturalKey;
-import ru.kadyrov.sync.data.domain.Pair;
-import ru.kadyrov.sync.data.transform.exception.ParseException;
+import ru.kadyrov.sync.data.transform.api.exception.ParseException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;

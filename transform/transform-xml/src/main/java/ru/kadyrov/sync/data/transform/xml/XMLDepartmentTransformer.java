@@ -8,8 +8,8 @@ import org.xml.sax.SAXException;
 import ru.kadyrov.sync.data.domain.DuplicateException;
 import ru.kadyrov.sync.data.domain.NaturalKey;
 import ru.kadyrov.sync.data.domain.Pair;
-import ru.kadyrov.sync.data.transform.DepartmentTransformer;
-import ru.kadyrov.sync.data.transform.exception.ParseException;
+import ru.kadyrov.sync.data.transform.api.DepartmentTransformer;
+import ru.kadyrov.sync.data.transform.api.exception.ParseException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
@@ -32,10 +32,7 @@ public class XMLDepartmentTransformer implements DepartmentTransformer {
             Document document = XMLUtils.documentFromFile(file);
             Element root = XMLUtils.rootFromDocument(document, DEPARTMENTS);
             return readDepartment(root.getChildNodes());
-        } catch (ParserConfigurationException e) {
-            System.out.println("Config error");
-            throw new ParseException(e);
-        } catch (SAXException | IOException e) {
+        } catch (ParserConfigurationException | SAXException | IOException e) {
             throw new ParseException(e);
         }
     }

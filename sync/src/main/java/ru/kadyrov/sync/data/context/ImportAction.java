@@ -4,8 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ru.kadyrov.sync.data.db.api.DepartmentService;
 import ru.kadyrov.sync.data.domain.NaturalKey;
-import ru.kadyrov.sync.data.files.FileUtils;
-import ru.kadyrov.sync.data.transform.DepartmentTransformer;
+import ru.kadyrov.sync.data.transform.api.DepartmentTransformer;
 
 import java.io.File;
 import java.util.Map;

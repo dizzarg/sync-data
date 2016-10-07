@@ -34,7 +34,7 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>ru.kadyrov.sync.data.transform</groupId>
+            <groupId>ru.kadyrov.sync.data.transform.api</groupId>
             <artifactId>transform-api</artifactId>
             <scope>provided</scope>
         </dependency>

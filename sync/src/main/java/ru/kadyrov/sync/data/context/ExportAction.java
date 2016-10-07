@@ -3,7 +3,7 @@ package ru.kadyrov.sync.data.context;
 import ru.kadyrov.sync.data.db.api.DepartmentService;
 import ru.kadyrov.sync.data.domain.NaturalKey;
 import ru.kadyrov.sync.data.files.FileUtils;
-import ru.kadyrov.sync.data.transform.DepartmentTransformer;
+import ru.kadyrov.sync.data.transform.api.DepartmentTransformer;
 
 import java.nio.ByteBuffer;
 import java.util.Map;
